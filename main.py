@@ -9,6 +9,11 @@ def home():
     """
     return render_template('index.html')
 
+@app.route('/port')
+def port():
+    """_summary_
+    """
+    return render_template('port.html')
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
